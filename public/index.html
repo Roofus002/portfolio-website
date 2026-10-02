@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tharuka Weerasinghe — Portfolio</title>
+  <meta name="description" content="Portfolio of Tharuka Weerasinghe — IT / Web / DevOps / Cyber projects." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top progress bar -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <img class="brand-avatar" src="/assets/profile.jpeg" alt="Tharuka Weerasinghe" />        
+        <span>Tharuka Weerasinghe</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+          <img id="themeIconImg" class="theme-icon" src="assets/moon.png" alt="">
+        </button>
+        <button class="burger" id="burger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill reveal">Open to Work </p>
+          <h1 class="reveal">
+            Tharuka<span class="grad"> Weerasinghe</span>.<br />
+            IT • DevOps • Full-Stack • Cybersecurity
+          </h1>
+          <p class="sub reveal">
+            I am focused on web development, DevOps/cloud fundamentals, and cybersecurity.
+            I like building things that feel smooth, fast, and simple to use.
+          </p>
+
+          <div class="hero-cta reveal">
+             <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Let’s Talk</a>
+          </div>
+
+          <div class="hero-badges reveal">
+            <span class="badge">Web Dev</span>
+            <span class="badge">Programming</span>
+            <span class="badge">Forensics</span>
+            <span class="badge">Network & Security</span>
+            <span class="badge">DevOps</span>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="card">
+            <div class="card-top">
+              <img class="avatar" src="/assets/profile.jpeg" alt="Photo of Tharuka Weerasinghe" />              
+            <div>
+                <p class="card-name">Tharuka Weerasinghe</p>
+                <p class="card-role">IT Student • Builder</p>
+              </div>
+            </div>
+
+            <div class="card-stats">
+              <div class="stat">
+                <p class="stat-label">Bachelor of IT (Professional)</p>
+                <p class="stat-label">RMIT University</p>
+              </div>
+              <div class="stat">
+                <p class="stat-label">Melbourne, Australia</p>
+              </div>
+              <div class="stat">
+                <p class="stat-num" data-count="5">0</p>
+                <p class="stat-label">Projects</p>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <a class="btn btn-small" href="#contact">Contact</a>
+              <a class="btn btn-small btn-ghost" href="/assets/Tharuka_Resume.pdf" id="resumeBtn">
+                View Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-blobs" aria-hidden="true">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <span class="blob b3"></span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">About me </h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel reveal">
+            <p>
+              I enjoy building modern websites and small web apps with clean UI, solid structure,
+              and practical features. I’m comfortable with HTML/CSS/JS, and I’ve worked with PHP and databases
+              in uni projects.
+            </p>
+            <p>
+              I also like hands-on technical work: Docker labs, networking/security exercises, and learning how
+              real deployments work.
+            </p>
+            <div class="chips">
+              <span class="chip">Australia (Melbourne)</span>
+              <span class="chip">Open to internship</span>
+              <span class="chip">Team projects</span>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h3>Highlights</h3>
+            <ul class="tick">
+              <li>Build responsive websites with smooth interactions and accessibility in mind</li>
+              <li>Comfortable collaborating using Git, branching, and code reviews</li>
+              <li>Hands-on with Docker-based labs and security-focused assignments</li>
+            </ul>
+            <div class="mini-actions">
+              <a class="link" href="#projects">See projects →</a>
+              <a class="link" href="#contact">Contact me →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Frontend</h3>
+            <p class="muted">HTML, CSS, JavaScript, PHP, React JS</p>
+            <!-- <div class="bars">
+              <div class="bar"><span style="width: 82%"></span></div>
+              <div class="bar"><span style="width: 78%"></span></div>
+              <div class="bar"><span style="width: 74%"></span></div>
+            </div> -->
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Backend</h3>
+            <p class="muted">SQLite, MySQL, MongoDB</p>
+            <!-- <div class="bars">
+              <div class="bar"><span style="width: 62%"></span></div>
+              <div class="bar"><span style="width: 58%"></span></div>
+              <div class="bar"><span style="width: 55%"></span></div>
+            </div> -->
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>DevOps</h3>
+            <p class="muted">GitHub Actions, Docker, Ansible, Terraform, Docker, AWS EC2, AWS ALB</p>
+            <!-- <div class="bars">
+              <div class="bar"><span style="width: 70%"></span></div>
+              <div class="bar"><span style="width: 66%"></span></div>
+              <div class="bar"><span style="width: 60%"></span></div>
+            </div> -->
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Network & Cybersecurity</h3>
+            <p class="muted">Firewalls, IDS/IPS, Wireshark, Nmap, Metasploit</p>
+            <!-- <div class="bars">
+              <div class="bar"><span style="width: 64%"></span></div>
+              <div class="bar"><span style="width: 58%"></span></div>
+              <div class="bar"><span style="width: 52%"></span></div>
+            </div> -->
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Coding</h3>
+            <p class="muted">Python, Java, C++, C#, Assembly, Bash</p>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Digital Forensics</h3>
+            <p class="muted">Autopsy, FTK Imager, Hex Editors, Volatility, Snort</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="reveal">Projects</h2>
+          </div>
+
+          <div class="project-grid">
+
+            <article class="project reveal">
+              <div class="project-top">
+                <h3>Woofya Trackers (Uni Project)</h3>
+                <span class="tag">Web App</span>
+              </div>
+              <p class="muted">
+                A customizable pet tracking experience with reminders and tracker UI elements, focused on usability and clean front-end interactions.
+              </p>
+              <div class="project-meta">
+                <span class="pill2">JavaScript</span>
+                <span class="pill2">PHP</span>
+                <span class="pill2">HTML</span>
+                <span class="pill2">UI/UX</span>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <h3>ShopSphere Clothing Website</h3>
+                <span class="tag">Website</span>
+              </div>
+              <p class="muted">
+                A full-stack e-commerce concept focused on user-friendly design, secure back-end integration, and a community forum module.
+              </p>
+              <div class="project-meta">
+                <span class="pill2">HTML</span>
+                <span class="pill2">CSS</span>
+                <span class="pill2">JavaScript</span>
+                <span class="pill2">MySQL</span>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <h3>DevOps Infrastructure for CI/CD</h3>
+                <span class="tag">DevOps</span>
+              </div>
+              <p class="muted">
+                Designed and automated a scalable cloud deployment pipeline with containerized services, automated testing/linting, and repeatable environment setup.
+              </p>
+              <div class="project-meta">
+                <span class="pill2">GitHub Actions</span>
+                <span class="pill2">Docker</span>
+                <span class="pill2">Ansible</span>
+                <span class="pill2">Terraform</span>
+                <span class="pill2">AWS EC2</span>
+                <span class="pill2">AWS ALB</span>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <h3>Network Security & Firewall Configuration</h3>
+                <span class="tag">Security</span>
+              </div>
+              <p class="muted">
+                Implemented stateful firewall and IDS/IPS rules using iptables and Snort, validated protections through controlled testing, and analyzed traffic in Wireshark.
+              </p>
+              <div class="project-meta">
+                <span class="pill2">iptables</span>
+                <span class="pill2">Snort</span>
+                <span class="pill2">Wireshark</span>
+                <span class="pill2">Kali Linux</span>
+                <span class="pill2">Nmap</span>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project-top">
+                <h3>Lanka Bharatha Travels Site</h3>
+                <span class="tag">In Progress</span>
+              </div>
+              <p class="muted">
+                A modern travel agency site with destination pages, inquiry flow, and a mobile-first layout.
+              </p>
+              <div class="project-meta">
+                <span class="pill2">HTML/CSS</span>
+                <span class="pill2">Responsive</span>
+                <span class="pill2">Forms</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    <!-- Contact -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Contact</h2>
+          <p class="reveal muted">Prefer email or a quick message here — I usually reply within 24–48 hours.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel reveal">
+            <h3>Let’s build something</h3>
+
+            <div class="contact-list">
+              <a class="contact-item" href="mailto:tharuka.ykw@outlook.com">
+                <img class="contact-icon" src="assets/email.png" alt="" aria-hidden="true">
+                tharuka.ykw@outlook.com
+              </a>
+
+              <a class="contact-item" href="https://github.com/Roofus002" target="_blank" rel="noreferrer">
+                <img class="contact-icon" src="assets/github.png" alt="" aria-hidden="true">
+                GitHub
+              </a>
+
+              <a class="contact-item" href="https://www.linkedin.com/in/tharuka-weerasinghe-5b28b813b/" target="_blank" rel="noreferrer">
+                <img class="contact-icon" src="assets/linkedIn.png" alt="" aria-hidden="true">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+      <form class="panel reveal" id="contactForm" action="contact.php" method="POST">
+        <input type="text" name="website" autocomplete="off" tabindex="-1" class="honeypot" aria-hidden="true">
+            <label>
+              Name
+              <input required name="name" type="text" placeholder="Your name" />
+            </label>
+
+            <label>
+              Email
+              <input required name="email" type="email" placeholder="you@example.com" />
+            </label>
+
+            <label>
+              Message
+              <textarea required name="message" rows="5" placeholder="What do you want to build?"></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send message</button>
+            <p class="tiny" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Tharuka Weerasinghe</p>
+        <a class="link" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

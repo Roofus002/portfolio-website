@@ -1,0 +1,20 @@
+ .firebaserc                      |    5 [32m+[m
+ .gitignore                       |   69 [32m+[m
+ firebase.json                    |   24 [32m+[m
+ functions/.eslintrc.js           |   28 [32m+[m
+ functions/.gitignore             |    2 [32m+[m
+ functions/index.js               |   63 [32m+[m
+ functions/package-lock.json      | 7965 [32m++++++++++++++++++++++++++++++++++++++[m
+ functions/package.json           |   28 [32m+[m
+ public/404.html                  |   33 [32m+[m
+ public/assets/Tharuka_Resume.pdf |  Bin [31m0[m -> [32m117221[m bytes
+ public/assets/email.png          |  Bin [31m0[m -> [32m59966[m bytes
+ public/assets/github.png         |  Bin [31m0[m -> [32m245629[m bytes
+ public/assets/linkedIn.png       |  Bin [31m0[m -> [32m65932[m bytes
+ public/assets/moon.png           |  Bin [31m0[m -> [32m130616[m bytes
+ public/assets/profile.jpeg       |  Bin [31m0[m -> [32m258443[m bytes
+ public/assets/sun.png            |  Bin [31m0[m -> [32m118278[m bytes
+ public/index.html                |  377 [32m++[m
+ public/script.js                 |  140 [32m+[m
+ public/styles.css                |  626 [32m+++[m
+ 19 files changed, 9360 insertions(+)
